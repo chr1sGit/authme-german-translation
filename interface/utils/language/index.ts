@@ -3,6 +3,8 @@ import { localeHU } from "@utils/language/hu"
 import { localeES } from "@utils/language/es"
 import { localeFR } from "@utils/language/fr"
 import { localeRU } from "@utils/language/ru"
+import { localeDE } from "@utils/language/de"
+
 
 export const getLanguage = () => {
 	const language = navigator.language
@@ -15,6 +17,8 @@ export const getLanguage = () => {
 		return localeFR
 	} else if (language.startsWith("ru")) {
 		return localeRU
+	} else if (language.startsWith("de")) {
+		return localeDE
 	} else {
 		return localeEN
 	}
